@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>430</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>ehb.bibliotheek::Person
+--
+-name: java.lang.String
+-maxBooks: int
+-books: java.util.List
+--
++Person(java.lang.String): ctor
++getName(): java.lang.String
++setName(java.lang.String): void
++getMaxBooks(): int
++setMaxBooks(int): void
++getBooks(): java.util.List
++setBooks(java.util.List): void
++checkoutBook(ehb.bibliotheek.Book): ehb.bibliotheek.Book
++checkinBook(ehb.bibliotheek.Book): ehb.bibliotheek.Book
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>10</y>
+      <w>330</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>ehb.bibliotheek::Book
+--
+-title: java.lang.String
+-author: java.lang.String
+-available: boolean
+--
++Book(java.lang.String, java.lang.String): ctor
++isAvailable(): boolean
++setAvailable(boolean): void
++getTitle(): java.lang.String
++setTitle(java.lang.String): void
++getAuthor(): java.lang.String
++setAuthor(java.lang.String): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>280</y>
+      <w>350</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>ehb.bibliotheek::MyLibrary
+--
+-books: java.util.List
+-patrons: java.util.List
+--
++MyLibrary(): ctor
++getBooks(): java.util.List
++setBooks(java.util.List): void
++getPatrons(): java.util.List
++setPatrons(java.util.List): void
++isBookAvailable(ehb.bibliotheek.Book): boolean
++main(java.lang.String[]): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>280</y>
+      <w>190</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>ehb.bibliotheek::DierTest
+--
+--
++DierTest(): ctor
++setUp(): void
++testDierStringInt(): void
++testToString(): void
++testGetNaam(): void
++testSetNaam(): void
++testGetLeeftijd(): void
++testSetLeeftijd(): void
++testDier(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>280</y>
+      <w>240</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>ehb.bibliotheek::PersoonTest
+--
+-p1: ehb.bibliotheek.Person
+--
++PersoonTest(): ctor
++setup(): void
++testSetNaam(): void
++testSetMaximumBoeken(): void
++testConstructorPersoon(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
